@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import Post from "./Post"
 
 function PostList(props) {
+  const { postList } = props;
   return (
     <React.Fragment>
       <hr/>
-      {props.postList.map(post =>
+      {postList.map(post =>
         <Post
-          title={post.title}
           userName={post.userName}
+          message={post.message}
           dateTime={post.dateTime}
           voteTotal={post.voteTotal}
           postId={post.postId}
@@ -24,4 +25,4 @@ PostList.propTypes = {
   postList: PropTypes.array
 };
 
-export default Post;
+export default PostList;

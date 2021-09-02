@@ -24,4 +24,4 @@ ThreadList.propTypes = {
   threadList: PropTypes.array
 };
 
-export default Thread;
+export default ThreadList;
