@@ -28,28 +28,32 @@ const postList = [
     message: "Wow I hate this",
     dateTime: new Date().toString(),
     voteTotal: -6,
-    threadId: threadList[0].threadId
+    threadId: threadList[0].threadId,
+    postId: v4()
   },
   {
     userName: "KittenChampion",
     message: "Actually this is good",
     dateTime: new Date().toString(),
     voteTotal: 1000,
-    threadId: threadList[0].threadId
+    threadId: threadList[0].threadId,
+    postId: v4()
   },
   {
     userName: "OctopusHater05",
     message: "Uggggh disgusting!",
     dateTime: new Date().toString(),
     voteTotal: 0,
-    threadId: threadList[1].threadId
+    threadId: threadList[1].threadId,
+    postId: v4()
   },
   {
     userName: "8ArmsBestArms",
     message: "Wow I'm really surprised to see so much OctoHate",
     dateTime: new Date().toString(),
     voteTotal: 238,
-    threadId: threadList[1].threadId
+    threadId: threadList[1].threadId,
+    postId: v4()
   },
 ]
 
