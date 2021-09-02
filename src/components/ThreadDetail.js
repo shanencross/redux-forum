@@ -10,7 +10,6 @@ function ThreadDetail(props) {
       <h3>Votes: {thread.voteTotal} User Name: {thread.userName}</h3>
       <h4>{thread.dateTime}</h4>
       <p>{thread.message}</p>
-      <hr/>
       <PostList postList={postList}/>
     </React.Fragment>
   );

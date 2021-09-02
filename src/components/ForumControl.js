@@ -2,6 +2,8 @@ import React from 'react';
 import ThreadList from "./ThreadList";
 import ThreadDetail from "./ThreadDetail";
 import { v4 } from "uuid";
+import NewPostForm from './NewPostForm';
+import NewThreadForm from './NewThreadForm';
 
 const threadList = [
   {
@@ -60,25 +62,25 @@ const postList = [
 function ForumControl(props) {
   return (
     <React.Fragment>
-      <h1>Thread List</h1>
       <ThreadList threadList={threadList}/>
       <hr/>
       <hr/>
-      <h1>Thread 0 Detail</h1>
       <ThreadDetail 
         thread={threadList[0]} 
         postList={postList.filter(post => post.threadId === threadList[0].threadId)}
       />
       <hr/>
       <hr/>
-      <h1>Thread 1 Detail</h1>
       <ThreadDetail
         thread={threadList[1]} 
         postList={postList.filter(post => post.threadId === threadList[1].threadId)}
       />
       <hr/>
       <hr/>
-      <h1>Post 0 Detail</h1>
+      <NewPostForm/>
+      <hr/>
+      <hr/>
+      <NewThreadForm/>
     </React.Fragment>
   );
 }
